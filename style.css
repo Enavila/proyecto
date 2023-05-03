@@ -373,7 +373,7 @@ nav div div input:focus{
     }
     #contenido-v {
         margin-left: 20vw;
-        margin-top: -10vh;
+        margin-top: -15vh;
     }
         .caja-video:hover img:last-child {
             max-height: 280px;
@@ -385,4 +385,68 @@ nav div div input:focus{
         display: flex;
         justify-content: space-around;
     }
+}
+@media(max-width:500px){
+        .cuadricula-v .caja-v .caja-video img,
+            .cuadricula-v1 .caja-v .caja-video img {
+                width: 350px;
+                border-radius: 10px;
+            }
+        
+            #contenido-v {
+                margin-left: 20vw;
+                margin-top: -15vh;
+            }
+        
+            .caja-video:hover img:last-child {
+                max-height: 280px;
+            }
+        
+            nav div div input {
+                width: 300px;
+            }
+        
+            nav {
+                display: flex;
+                justify-content: space-around;
+            }
+            nav div div input {
+                width: 150px;
+            }
+            .microfono{
+                display: none;
+            }
+}
+@media(max-width:460px){
+            .cuadricula-v .caja-v .caja-video img,
+                .cuadricula-v1 .caja-v .caja-video img {
+                    width: 300px;
+                    border-radius: 10px;
+                }
+            
+                #contenido-v {
+                    margin-left: 22vw;
+                    margin-top: -15vh;
+                }
+            
+                .caja-video:hover img:last-child {
+                    max-height: 280px;
+                }
+            
+                nav div div input {
+                    width: 300px;
+                }
+            
+                nav {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            
+                nav div div input {
+                    width:110px;
+                }
+            
+                .microfono {
+                    display: none;
+                }
 }
