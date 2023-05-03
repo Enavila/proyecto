@@ -1,0 +1,388 @@
+:root{
+    --destacar: rgb(45,45,45);
+}
+*{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-size: 15px;
+    top: 0;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    display: grid;
+    grid-template-columns: 6% 94%;
+    background:rgb(15, 15, 15) ;
+}
+html, body{
+    height: 100%;
+}
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(100, 100, 100);
+    border-radius: 50px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(70, 70, 70);
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    background: rgb(15, 15, 15);
+}
+aside .burger .caja-burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 2vh 0px 1vh 0px;
+    border-radius: 50%;
+}
+aside .burger .caja-burger img{
+    width: 40px;
+}
+aside .burger, aside .hola, aside .hola a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+aside .hola .caja-hola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:90px;
+    height: 90px;
+    border-radius: 10px;
+}
+aside .hola .caja-hola a img{
+    width: 40px;
+}
+aside .hola .caja-hola a .img-hola{
+    width: 30px;
+}
+aside .hola .caja-hola a p{
+    font-size: 11px;
+}
+aside .burger .caja-burger:hover,aside .hola .caja-hola:hover {
+    background: var(--destacar);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 100px;
+    width: 96%;
+    background: rgb(15, 15, 15);
+}
+#logo {
+    width: 135px;
+    height: 60px;
+}
+nav div{
+    display: flex;
+    padding: 5px;
+}
+
+nav div .microfono{
+    border: rgb(24, 24, 24) solid 2px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-top: .25rem;
+}
+nav div .microfono img{
+    width: 40px;
+}
+nav div .microfono:hover{
+    border: var(--destacar) solid 2px;
+    background-color: var(--destacar);
+}
+nav div div a{
+    border: rgb(34, 34, 34) solid 2px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 0px 30px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div div a img{
+    width: 65px;
+}
+nav div div input{
+    width: 400px;
+    padding-left: 2rem;
+    border: rgb(34, 34, 34) solid 2px;
+    background-color: rgb(18, 18, 18);
+    border-radius:30px 0px 0px 30px;
+    outline: 0px;
+
+}
+nav div div input:focus{
+    border: rgb(0, 119, 255) solid 1px;
+}
+#acciones {
+    display: flex;
+    align-items: center;
+    margin: 0px 30px 0px 0px;
+    gap: 15px;
+}
+
+#acciones a img {
+    width: 40px;
+}
+.botonera{
+    position: fixed;
+    top: 55px;
+    left: 100px;
+    width: 96%;
+    background: rgb(15, 15, 15);
+}
+.btn{
+    display: inline-block;
+    margin: 0rem .6rem 1rem 0rem;
+    padding: .5rem .8rem;
+    border-radius: 8px;
+    background: rgb(39, 39, 39);
+    font-size: .85rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+.btn:hover{
+    background-color: rgb(70, 70, 70);
+}
+.btn:focus{
+    color: black;
+    background: white;
+}
+#contenido-v{
+    margin-top: 15vh;
+    margin-left: 6vw;
+
+}
+
+.caja-v{
+    width: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.cuadricula-v .caja-v .caja-video img,.cuadricula-v1 .caja-v .caja-video img{
+    width: 320px;
+    border-radius: 10px;
+
+}
+.caja-video img:last-child{
+    display: none;
+}
+.caja-video:hover img:last-child{
+    display: block;
+    max-height: 180px;
+    transform: scale(1.05);
+
+}
+.caja-video:hover img:first-child{
+    display: none;
+}
+.cuadricula-v .caja-v .nombre-video, .cuadricula-v1 .caja-v .nombre-video{
+    display: flex;
+    margin-top: .3rem;
+}
+.cuadricula-v .caja-v .nombre-video .foto-canal img, .cuadricula-v1 .caja-v .nombre-video .foto-canal img{
+    width: 40px;
+    border-radius: 50%;
+    margin: 0rem .2rem .2rem .2rem;
+}
+.cuadricula-v .caja-v .nombre-video .nombre,.cuadricula-v1 .caja-v .nombre-video .nombre{
+    margin-left: .2rem;
+}
+.cuadricula-v .caja-v .nombre-video .nombre h2, .cuadricula-v1 .caja-v .nombre-video .nombre h2{
+    text-transform: capitalize;
+}
+.cuadricula-v .caja-v .nombre-video .nombre p,.cuadricula-v1 .caja-v .nombre-video .nombre p{
+    font-size: 13px;
+    color: rgb(196, 196, 196);
+}
+
+.visible{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-left: 5px;
+    gap: 25px;
+
+}
+.oculto {
+    display: none;
+}
+.botonera input {
+    display: none;
+}
+.botonera label {
+    font-size: 2rem;
+    color: var(--verde);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: end;
+    margin-right: 5rem;
+}
+@media(max-width:1600px){
+    nav {
+            left: 90px;
+        }
+    
+        .botonera {
+            left: 90px;
+        }
+}
+@media(max-width:1400px){
+    .visible {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    nav {
+        left: 90px;
+    }
+    .botonera {
+        left: 90px;
+    }
+    #contenido-v {
+        margin-top: 27vh;
+        margin-left: 8vw;
+    }
+    .cuadricula-v .caja-v .caja-video img, .cuadricula-v1 .caja-v .caja-video img {
+        width: 370px;
+        border-radius: 10px;
+    }
+    #acciones { 
+        margin: 0px 50px 0px 0px;
+    }
+    .caja-video:hover img:last-child {
+        max-height: 207.61px;
+    }
+}
+@media(max-width:1200px){
+    .visible {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 25vh;
+    }
+    nav {
+        left: 90px;
+    }
+                #contenido-v {
+                    margin-top: 30vh;
+                    margin-left: 8vw;
+                }
+        .botonera {
+            position: fixed;
+            top: 55px;
+            width: 96%;
+            background: transparent;
+            max-height: 5rem;
+        }
+        .botonera label {
+            visibility: visible;
+            opacity: 1;
+        }
+    
+        .botonera section {
+            left: 0;
+            width: 100%;
+            background: rgb(15,15,15);
+            padding: .5rem 2rem;
+            border-top: .1rem solid rgba(0, 0, 0, .2);
+            box-shadow: 0 .5rem 1rem rgb(24, 24, 24);
+            transform-origin: top;
+            transform: scaleY(0);
+            opacity: 0;
+            transition: .2s linear;
+        }
+    
+        .botonera  a {
+            display: block;
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+    
+        .botonera input:checked ~ section {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+    
+        .botonera input:checked~label::before {
+            content: '\f00d';
+    
+        }
+        #buscar-n{
+            margin-right: 7vw;
+        }
+    #contenido-v {
+        margin-top: -10vh;
+        margin-left: 12vw;
+    }
+    .cuadricula-v .caja-v .caja-video img, .cuadricula-v1 .caja-v .caja-video img {
+        width: 300px;
+        border-radius: 10px;
+    }
+    #acciones { 
+        margin: 0px 50px 0px 0px;
+    }
+    .caja-video:hover img:last-child {
+        max-height: 168.33px;
+    }
+}
+@media(max-width:950px){
+    #acciones {
+        display: none;
+    }
+    .visible {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cuadricula-v .caja-v .caja-video img,.cuadricula-v1 .caja-v .caja-video img {
+        width: 350px;
+        border-radius: 10px;
+    }
+}
+@media(max-width:750px){
+    .visible {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cuadricula-v .caja-v .caja-video img,.cuadricula-v1 .caja-v .caja-video img {
+        width: 500px;
+        border-radius: 10px;
+    }
+    #contenido-v {
+        margin-left: 20vw;
+        margin-top: -10vh;
+    }
+        .caja-video:hover img:last-child {
+            max-height: 280px;
+        }
+    nav div div input {
+    width: 300px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+}
