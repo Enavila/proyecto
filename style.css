@@ -385,11 +385,14 @@ nav div div input:focus{
         display: flex;
         justify-content: space-around;
     }
+    nav div .microfono{
+        display: none;
+    }
 }
-@media(max-width:500px){
+@media(max-width:600px){
         .cuadricula-v .caja-v .caja-video img,
             .cuadricula-v1 .caja-v .caja-video img {
-                width: 350px;
+                width: 420px;
                 border-radius: 10px;
             }
         
@@ -417,10 +420,10 @@ nav div div input:focus{
                 display: none;
             }
 }
-@media(max-width:460px){
+@media(max-width:490px){
             .cuadricula-v .caja-v .caja-video img,
                 .cuadricula-v1 .caja-v .caja-video img {
-                    width: 300px;
+                    width: 340px;
                     border-radius: 10px;
                 }
             
@@ -433,7 +436,7 @@ nav div div input:focus{
                     max-height: 280px;
                 }
             
-                nav div div input {
+                nav div div input{
                     width: 300px;
                 }
             
